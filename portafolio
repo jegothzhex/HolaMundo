@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio | Kevin Oscar Ariz</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        header h1:hover {
+            color: crimson;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #e67e22;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .proyecto {
+            margin-bottom: 60px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 40px;
+        }
+
+        .imagen-container {
+            position: relative;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .imagen-container img,
+        .imagen-container iframe {
+            width: 100%;
+            height: auto;
+            border: 2px solid #888;
+        }
+
+        .btn-diapo, .btn-jugar {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-diapo:hover, .btn-jugar:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 onmouseover="cambiarColor(this)" onmouseout="restaurarColor(this)">Portafolio de Kevin Oscar Ariz</h1>
+    <p>Desarrollador en formación | Diseño de videojuegos</p>
+</header>
+
+<section>
+    <h2>Presentación</h2>
+    <p>
+        Mi nombre es Kevin Oscar Ariz, tengo 22 años y soy estudiante en Desarrollo y Producción de Videojuegos. Además de mi formación técnica, soy escritor de historias cortas en redes sociales literarias, y un apasionado entusiasta de la cultura geek. Esta página es una pequeña ventana a mis primeros pasos en el vasto y desafiante mundo del desarrollo de videojuegos.
+    </p>
+</section>
+
+<section class="proyecto">
+    <h2>1. La Fuga del Plátano (Scratch)</h2>
+    <div class="imagen-container">
+        <img id="img1" src="Captura.PNG" alt="Imagen del juego 1">
+        <button class="btn-diapo" onclick="cambiarImagen('img1', imagenesJuego1)">Siguiente Imagen</button>
+    </div>
+    <p>
+         El primer juego que desarrollé fue bastante sencillo, creado utilizando la plataforma Scratch. El propósito principal de este proyecto inicial era aprender y comprender los conceptos fundamentales de las variables y las condiciones dentro de la programación. A través de este juego, buscaba internalizar la lógica subyacente a la programación y tener una pequeña introducción práctica al mundo del desarrollo de software. La mecánica del juego era simple pero desafiante: el jugador controlaba una banana que era implacablemente perseguida por un mono. Para añadir un elemento de dificultad creciente, cada 10 segundos el mono se duplicaba, incrementando exponencialmente el número de perseguidores. El objetivo final del juego era simplemente sobrevivir el mayor tiempo posible a la incesante persecución de los monos. Este proyecto, aunque básico, me proporcionó una valiosa experiencia y una base sólida para futuros proyectos de programación.
+    </p>
+    <a class="btn-jugar" href="https://scratch.mit.edu/projects/1150863605/" target="_blank">Jugar en Scratch</a>
+</section>
+
+<section class="proyecto">
+    <h2>2. El Grimorio (RPG Maker MV)</h2>
+    <div class="imagen-container">
+        <img id="img2" src="Captura5.PNG" alt="Imagen del juego 2">
+        <button class="btn-diapo" onclick="cambiarImagen('img2', imagenesJuego2)">Siguiente Imagen</button>
+    </div>
+    <p>
+        El Grimorio, proyecto en RPG Maker MV, implementa interruptores, condicionales, eventos, combate y narrativa interactiva. Juego de exploración y decisiones con múltiples finales, explora elementos simbólicos y existenciales. Un prisionero es enviado en misión suicida por el Grimorio, libro vital contra demonios.
+
+Tras la introducción, el juego comienza en un laberinto con recursos mínimos. Tres puertas, una lleva a la torre, las otras a laberintos secundarios. Un cofre con hacha está custodiado por un esqueleto (aprendizaje de objetos, interruptores, combate). En la torre, el "guardia de la mente" propone acertijos. Aciertos permiten avanzar, errores implican combate imposible. Superar el desafío otorga llave y mejora estadísticas. Se trabajó con condicionales, objetos clave y evolución.
+
+El "guardia del cuerpo" exige objetos (espada, casco, escudo, anillo) para el combate. Solo si el jugador los posee se activa la lucha, mostrando cambios de NPC según inventario. Vencido, se puede leer o no el grimorio. No leerlo finaliza el juego. Leerlo lleva al infierno a luchar contra una cucaracha demoníaca. Victoria lleva a Lucifer (muerte), derrota a salvación celestial.
+
+En el cielo, hablar con un ángel o ignorarlo abre caminos. Ignorar lleva a combate angelical infinito y purgatorio. Escuchar al ángel ofrece paz o guerra. Guerra finaliza el juego. Paz lleva a una casa con una grieta que transporta a una escena onírica donde un hombre reflexiona sobre la irrealidad de la experiencia. Al regresar, la ventana sugiere una transformación del jugador. Se usaron sacudidas, tintes, cambio de ambiente y simbolismo.
+
+Se utilizaron assets de RPG Maker MV. A nivel técnico: interruptores, condiciones, eventos, objetos, estadísticas, restricción de combate y progresión por ítems, cofres, eventos automáticos y paralelos, validación de inventario y efectos visuales.
+
+Narrativamente, El Grimorio es un viaje simbólico sobre castigo, repetición, identidad, libre albedrío y búsqueda de sentido. El personaje no "vence", sino que adquiere una conciencia incierta sobre sí mismo y el mundo, dejando la pregunta: "¿Quién soy ahora?".
+
+Este juego es un ejercicio de iniciación en el desarrollo, explorando la capacidad expresiva del medio para narrar historias complejas y emocionales.
+    </p>
+    <a class="btn-jugar" href="https://www.mediafire.com/file/tnbsl6vjt8hgske/el+grimorio.rar/file" target="_blank">Descargar El Grimorio</a>
+</section>
+
+<section class="proyecto">
+    <h2>3. Laberinto Infernal (Unity 3D – C#)</h2>
+    <div class="imagen-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SwiOdVrPyjY" title="Laberinto Infernal" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>
+         El tercer juego presentó mayores desafíos, principalmente debido a que el método de enseñanza presencial no resultó del todo claro para mí. Adicionalmente, encontré dificultades para comprender los videos explicativos disponibles. Al menos, esa fue mi experiencia personal con el material de aprendizaje. Este juego en particular se basa en un boceto original de mi autoría, que describe un juego en el cual el jugador se encuentra atrapado en un laberinto mientras es perseguido implacablemente por un demonio. El objetivo principal del jugador es navegar a través de este laberinto, desplazándose desde un punto de inicio específico, designado como punto A, hasta un punto final predeterminado, conocido como punto B. El juego fue desarrollado utilizando el lenguaje de programación C# y la plataforma Unity 3D Universal. En cuanto a los elementos visuales, el modelado 3D fue creado a partir de un dibujo original que yo mismo realicé, utilizando una herramienta de inteligencia artificial para transformar mi dibujo en modelos tridimensionales. La idea central del juego es, en realidad, mucho más compleja y elaborada que lo que se presenta en esta versión inicial. Sin embargo, esta implementación actual sirve como un punto de partida crucial dentro del proyecto de Unity, sentando las bases para futuras mejoras y expansiones a medida que adquiera mayores habilidades y conocimientos en el desarrollo de videojuegos. Esto representa un primer paso en la materialización de un proyecto más ambicioso que se irá perfeccionando con el tiempo.
+    </p>
+    <a class="btn-jugar" href="https://www.mediafire.com/file/ncnun532emzah91/laberinto+del+hades.rar/file" target="_blank">Descargar Laberinto Infernal</a>
+</section>
+
+<footer>
+    © 2025 Kevin Oscar Ariz – Todos los derechos reservados
+</footer>
+
+<script>
+    function cambiarColor(elemento){
+        elemento.style.color = "crimson";
+    }
+
+    function restaurarColor(elemento){
+        elemento.style.color = "#3498db";
+    }
+
+    const imagenesJuego1 = ["Captura2.PNG"];
+    const imagenesJuego2 = ["captura3.png", "captura8.png", "captura7.png"];
+    const indices = { "img1": 0, "img2": 0, "img3": 0 };
+
+    function cambiarImagen(id, imagenes) {
+        const img = document.getElementById(id);
+        indices[id] = (indices[id] + 1) % imagenes.length;
+        img.src = imagenes[indices[id]];
+    }
+</script>
+
+</body>
+</html>
